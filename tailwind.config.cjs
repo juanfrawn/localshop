@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        comfortaa: ["Comfortaa", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
       colors: {
-        primary: "#eb6f00"
+        primary: "#eb6f00",
+        secondary: "#29A035",
+        item: "#E0E0E0",
       },
     },
   },

@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import PasosContainer from './components/PasosContainer'
 import Downloads from './components/Downloads'
+import Unete from './components/Unete'
 
 import './App.css'
 
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <PasosContainer />
       <Downloads />
+      <Unete />
     </div>
   )
 }

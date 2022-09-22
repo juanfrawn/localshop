@@ -5,6 +5,7 @@ import Downloads from './components/Downloads'
 import Unete from './components/Unete'
 import Hero from './components/Hero'
 import Brands from './components/Brands'
+import Newsletter from './components/Newsletter'
 
 import './App.css'
 
@@ -18,6 +19,7 @@ function App() {
       <Unete />
       <Hero />
       <Brands />
+      <Newsletter />  
     </div>
   )
 }

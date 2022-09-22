@@ -1,3 +1,4 @@
+import NavigationMenu from './components/NavigationMenu'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import PasosContainer from './components/PasosContainer'
@@ -13,6 +14,7 @@ import './App.css'
 function App() {
   return (
     <div className="App font-nunito">
+      <NavigationMenu />
       <Navbar />
       <Banner />
       <PasosContainer />

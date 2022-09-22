@@ -5,7 +5,7 @@ const PasoItem = ({ img, title, description }) => {
         <img src={img} alt={title} className="md:w-full" />
       </div>
       <div className="px-2 self-center">
-        <h3 className="text-lg sm:text-xl text-primary font-extrabold md:mb-2">{title}</h3>
+        <h3 className="text-lg sm:text-xl text-primary font-extrabold md:mb-2 lg:text-2xl">{title}</h3>
         <p className="text-sm sm:text-base text-subtitle">{description}</p>
       </div>
     </section>

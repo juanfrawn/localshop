@@ -18,6 +18,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         steps: "68px minmax(0, 1fr)",
+        links: "32px minmax(0, 1fr)",
       }
     },
   },

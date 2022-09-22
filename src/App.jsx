@@ -1,7 +1,9 @@
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
-import './App.css'
 import PasosContainer from './components/PasosContainer'
+import Downloads from './components/Downloads'
+
+import './App.css'
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Navbar />
       <Banner />
       <PasosContainer />
+      <Downloads />
     </div>
   )
 }

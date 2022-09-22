@@ -2,7 +2,7 @@ import banner from '../assets/Banner.png'
 
 const Banner = () => {
   return (
-    <section className='mb-14'>
+    <section className='mb-16'>
         <div className='pb-6 bg-gradient-to-b from-primary via-primary/80 to-white'>
             <img src={banner} alt="banner" />
         </div>

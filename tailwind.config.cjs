@@ -12,8 +12,12 @@ module.exports = {
       colors: {
         primary: "#eb6f00",
         secondary: "#29A035",
+        subtitle: "#707070",
         item: "#E0E0E0",
       },
+      gridTemplateColumns: {
+        steps: "68px minmax(0, 1fr)",
+      }
     },
   },
   plugins: [],

@@ -5,13 +5,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      primary: "#eb6f00"
-    },
     extend: {
       fontFamily: {
         comfortaa: ["Comfortaa", "sans-serif"],
-      }
+      },
+      colors: {
+        primary: "#eb6f00"
+      },
     },
   },
   plugins: [],

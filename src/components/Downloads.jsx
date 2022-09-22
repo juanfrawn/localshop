@@ -8,7 +8,7 @@ import local from "../assets/local.svg"
 
 const Downloads = () => {
   return (
-    <section className="mb-16 xs:max-w-lg xs:mx-auto">
+    <section className="mb-16 sm:max-w-lg sm:mx-auto md:max-w-3xl md:grid md:grid-cols-2">
         <BotonComprar icon={whatsapp} text="Compra directo por WhatsApp" color="bg-secondary" />
         <BotonComprar icon={play_store} text="Descarga la app en Google Play" color="bg-title" />
         <BotonComprar icon={apple} text="Descarga la app en la App Store" color="bg-title" />

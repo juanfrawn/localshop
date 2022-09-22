@@ -10,31 +10,31 @@ import linkedin from '../assets/linkedIn.svg'
 
 const Footer = () => {
   return (
-    <footer className='bg-title'>
+    <footer className='bg-title pb-10'>
         <section className='text-white'>
             <div className='py-8'>
-                <img src={logo} alt="Localshop" className='mx-auto w-44' />
+                <img src={logo} alt="Localshop" className='mx-auto w-44 md:w-52' />
             </div>
-            <div>
-                <article className='grid grid-cols-links text-start w-52 mx-auto mb-4 gap-x-2'>
+            <div className='md:text-xl text-start'>
+                <article className='grid grid-cols-links w-52 mx-auto mb-4 gap-x-2 md:w-64'>
                     <img src={email} alt="correo" className='w-full' />
                     <p className='self-center'>contacto@localshop.cl</p>
                 </article>
-                <article className='grid grid-cols-links text-start w-52 mx-auto mb-10 gap-x-2'>
+                <article className='grid grid-cols-links w-52 mx-auto mb-10 gap-x-2 md:w-64'>
                     <img src={whatsapp} alt="whatsapp" className='w-full' />
                     <p className='self-center'>+56 9 5368 9258</p>
                 </article>
             </div>
         </section>
         <section className='flex justify-center gap-x-3 mb-8'>
-            <img src={facebook} alt="Facebook" />
-            <img src={instagram} alt="Instagram" />
-            <img src={twitter} alt="Twitter" />
-            <img src={linkedin} alt="Linkedin" />
+            <img src={facebook} className="md:w-5" alt="Facebook" />
+            <img src={instagram} className="md:w-9" alt="Instagram" />
+            <img src={twitter} className="md:w-9" alt="Twitter" />
+            <img src={linkedin} className="md:w-8" alt="Linkedin" />
         </section>
         <section className='text-white text-center'>
-            <p>Acortando la brecha digital democratizando el delivery</p>
-            <a className='text-primary'>Terminos y condiciones</a>
+            <p className='mb-2'>Acortando la brecha digital democratizando el delivery</p>
+            <a className='text-primary mb-2'>Terminos y condiciones</a>
             <p>Pioneros en Conversational Commerce en Chile</p>
         </section>
     </footer>

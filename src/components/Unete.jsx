@@ -5,9 +5,9 @@ import shopper from "../assets/shopper.png"
 
 const Unete = () => {
   return (
-    <section className="text-center mb-16 xs:max-w-lg xs:mx-auto">
-        <h2 className="mb-11 font-extrabold text-title text-xl xs:text-2xxl">UNETE A <span className="text-primary">LOCALSHOP</span></h2>
-        <div>
+    <section className="text-center mb-16 sm:max-w-lg sm:mx-auto md:max-w-3xl">
+        <h2 className="mb-11 font-extrabold text-title text-xl sm:text-2xxl md:text-4xl">UNETE A <span className="text-primary">LOCALSHOP</span></h2>
+        <div className="md:grid md:grid-cols-2 md:gap-x-4">
             <UneteCard img={tienda} title="Unete como Tienda" description="¡Ser parte de Localshop es gratis y fácil! Únete con tecnología que conoces" cta="¡Inscribe tu local gratis!" />
             <UneteCard img={shopper} title="Unete como Shopper" description="Ten ingresos extras en tu propio barrio, incluso a pie" cta="¡Quiero ser shopper de barrio!" />
         </div>

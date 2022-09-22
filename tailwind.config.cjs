@@ -23,10 +23,6 @@ module.exports = {
         steps: "68px minmax(0, 1fr)",
         links: "32px minmax(0, 1fr)",
       },
-      screens: {
-        "xxs": "380px",
-        "xs": "450px"
-      },
     },
   },
   plugins: [],

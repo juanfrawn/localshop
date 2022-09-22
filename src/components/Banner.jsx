@@ -3,10 +3,10 @@ import banner from '../assets/Banner.png'
 const Banner = () => {
   return (
     <section>
-        <div className='mb-8'>
+        <div className='pb-5 bg-gradient-to-b from-primary via-primary/80 to-white'>
             <img src={banner} alt="banner" />
         </div>
-        <div className='text-center'>
+        <div className='text-center mb-6'>
             <h1 className='text-2xl font-extrabold text-primary'>LOCALSHOP TE SALVA</h1>
             <p className='text-base'>!Lo más rico de tu barrio en minutos!</p>
         </div>

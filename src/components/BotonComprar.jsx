@@ -1,8 +1,8 @@
 const BotonComprar = ({icon, text, color}) => {
   return (
-    <button className={`${color} w-11/12 mx-auto mb-8 rounded-lg flex items-center text-white py-3 justify-center`}>
+    <button className={`${color} text-base w-11/12 mx-auto mb-8 rounded-lg flex items-center text-white py-3 justify-center xs:text-lg`}>
         <span className="mr-2">
-            <img src={icon} alt="icon" />
+            <img src={icon} className="xs:w-8" alt="icon" />
         </span>
         {text}
     </button>

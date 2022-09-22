@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
       },
+      fontSize: {
+        "2xxl": "28px",
+      },
       colors: {
         primary: "#eb6f00",
         secondary: "#29A035",
@@ -19,7 +22,11 @@ module.exports = {
       gridTemplateColumns: {
         steps: "68px minmax(0, 1fr)",
         links: "32px minmax(0, 1fr)",
-      }
+      },
+      screens: {
+        "xxs": "380px",
+        "xs": "450px"
+      },
     },
   },
   plugins: [],

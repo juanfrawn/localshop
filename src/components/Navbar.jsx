@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
+
 import menu from '../assets/menu.svg'
 import logo from '../assets/Logo.svg'
 import logoLG from '../assets/logo_xl.svg'
@@ -6,10 +9,15 @@ import cart from '../assets/cart.svg'
 import arrow from '../assets/arrow.svg'
 
 const Navbar = () => {
+  const { isMenuOpen, setIsMenuOpen } = useContext(AppContext);
+
+  
+  console.log(isMenuOpen);
+
   return (
-    <nav className="p-5 bg-primary">
+    <nav className="p-5 bg-primary sticky top-0 z-10">
       <div className='flex justify-between sm:max-w-lg sm:mx-auto md:max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-navbar'> 
-        <div className='flex items-center lg:hidden'>
+        <div className='flex items-center lg:hidden hover:cursor-pointer' onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <img src={menu} alt="Menú" className='w-8 md:w-11' />
         </div>
         <div>

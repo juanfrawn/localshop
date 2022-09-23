@@ -10,7 +10,7 @@ import mercurio from '../assets/brands/mercurio.svg';
 import teletrece from '../assets/brands/teletrece.svg';
 import tercera from '../assets/brands/tercera.svg';
 import uc from '../assets/brands/uc.svg';
-import universidad from '../assets/brands/uc.svg';
+import universidad from '../assets/brands/universidad.svg';
 
 export const Brands = [
     { name: 'Avonni', logo: avonni, url: 'https://www.google.com' },

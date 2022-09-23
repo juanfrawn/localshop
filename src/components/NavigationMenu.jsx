@@ -1,15 +1,31 @@
+import { useContext, useEffect, useState } from "react";
+import { AppContext } from "../context/AppContext";
+
 import close from "../assets/close.svg";
-import Logo from "../assets/Logo_orange.svg";
-import search from "../assets/search_orange.svg";
-import cart from "../assets/cart_orange.svg";
-import arrow from "../assets/arrow_orange.svg";
+import Logo from "../assets/Logo.svg";
+import search from "../assets/search.svg";
+import cart from "../assets/cart.svg";
+import arrow from "../assets/arrow.svg";
 
 const NavigationMenu = () => {
+    const { isMenuOpen, setIsMenuOpen } = useContext(AppContext);
+    const [navbarContent, setNavbarContent] = useState(false);
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            setTimeout(() => {
+                setNavbarContent(true);
+            }, 300);
+        } else {
+            setNavbarContent(false);
+        }
+    }, [isMenuOpen]);
+    
   return (
-    <div className="h-screen w-screen bg-white fixed top-0 -left-full">
+    <div className={`h-screen w-screen bg-primary fixed top-0 transition-all duration-500 ${isMenuOpen ? 'w-full' : 'w-0'} lg:hidden `}>
       <nav className="p-5">
         <div className="flex justify-between sm:max-w-lg sm:mx-auto md:max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-navbar">
-          <div className="flex items-center lg:hidden">
+          <div className="flex items-center lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <img src={close} alt="Cerrar menú" className="w-8 md:w-11" />
           </div>
 
@@ -30,7 +46,7 @@ const NavigationMenu = () => {
         </div>
       </nav>
       <section className="m-5">
-        <ul className="font-extrabold text-primary text-lg">
+        <ul className={`font-extrabold text-white text-lg transition-opacity duration-200 ${navbarContent ? 'opacity-100' : 'opacity-0'}`}>
             <li className="mb-8">Home</li>
             <li className="mb-8">Blog</li>
             <li className="mb-8">Preguntas Frecuentes</li>

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import PreguntasFrecuentes from './pages/PreguntasFrecuentes'
+import Login from './pages/Login'
 
 
 import './App.css'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/FAQ" element={<PreguntasFrecuentes />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   )

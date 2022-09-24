@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Blog from './pages/Blog'
 import PreguntasFrecuentes from './pages/PreguntasFrecuentes'
 import Login from './pages/Login'
+import Register from './pages/Register'
 
 
 import './App.css'
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/FAQ" element={<PreguntasFrecuentes />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
     </div>
   )

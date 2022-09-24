@@ -1,13 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+
 import NavigationMenu from './components/NavigationMenu'
 import Navbar from './components/Navbar'
-import Banner from './components/Banner'
-import PasosContainer from './components/PasosContainer'
-import Downloads from './components/Downloads'
-import Unete from './components/Unete'
-import Hero from './components/Hero'
-import Brands from './components/Brands'
-import Newsletter from './components/Newsletter'
-import Footer from './components/Footer'
+
+import Home from './pages/Home'
+import Blog from './pages/Blog'
+
 
 import './App.css'
 
@@ -16,14 +14,10 @@ function App() {
     <div className="App font-nunito">
       <NavigationMenu />
       <Navbar />
-      <Banner />
-      <PasosContainer />
-      <Downloads />
-      <Unete />
-      <Hero />
-      <Brands />
-      <Newsletter />  
-      <Footer />
+       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
     </div>
   )
 }

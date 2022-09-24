@@ -16,8 +16,6 @@ const Navbar = () => {
 
   const [showOptions, setShowOptions] = useState(false);
 
-  console.log(isMenuOpen);
-
   return (
     <nav className="p-5 bg-primary sticky top-0 z-10">
       <div className='flex justify-between sm:max-w-lg sm:mx-auto md:max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-navbar xl:max-w-5xl'> 

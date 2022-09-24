@@ -9,8 +9,8 @@ const Banner = () => {
         <div className="pb-6 bg-gradient-to-b from-primary via-primary/80 to-white flex justify-center order-1 lg:bg-none lg:w-1/2">
           <div className="sm:max-w-lg md:min-w-[700px] lg:min-w-0">
             <picture>
-              <source srcset={bannerXL} media="(min-width: 1024px)" />
-              <source srcset={bannerLG} media="(min-width: 768px)" />
+              <source srcSet={bannerXL} media="(min-width: 1024px)" />
+              <source srcSet={bannerLG} media="(min-width: 768px)" />
               <img src={banner} alt="banner" />
             </picture>
           </div>

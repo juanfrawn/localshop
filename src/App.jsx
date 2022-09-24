@@ -5,18 +5,20 @@ import Navbar from './components/Navbar'
 
 import Home from './pages/Home'
 import Blog from './pages/Blog'
+import PreguntasFrecuentes from './pages/PreguntasFrecuentes'
 
 
 import './App.css'
 
 function App() {
   return (
-    <div className="App font-nunito">
-      <NavigationMenu />
-      <Navbar />
+    <div className="font-nunito">
+        <Navbar />
+        <NavigationMenu />
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/FAQ" element={<PreguntasFrecuentes />} />
       </Routes>
     </div>
   )

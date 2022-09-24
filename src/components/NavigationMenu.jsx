@@ -45,7 +45,7 @@ const NavigationMenu = () => {
           </section>
         </div>
       </nav>
-      <section className="m-5">
+      <section className="m-5 z-20">
         <ul className={`font-extrabold text-white text-lg transition-opacity duration-200 ${navbarContent ? 'opacity-100' : 'opacity-0'}`}>
             <li className="mb-8">Home</li>
             <li className="mb-8">Blog</li>

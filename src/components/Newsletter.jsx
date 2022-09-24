@@ -9,7 +9,7 @@ const Newsletter = () => {
         <form className='flex flex-col text-center px-5 sm:max-w-lg sm:mx-auto md:max-w-xl'>
             <input type="text" className='bg-item text-center py-3 rounded-lg mb-3 font-semibold md:py-5 md:text-lg' placeholder='Nombre' name="ubicación" id="location" />
             <input type="text" className='bg-item text-center py-3 rounded-lg mb-3 font-semibold md:py-5 md:text-lg' placeholder='Email' name="ubicación" id="location" />
-            <button className='bg-secondary py-3 rounded-lg text-white font-extrabold text-base md:py-5 md:text-xl'>Enviar</button>
+            <button className='bg-secondary py-3 rounded-lg text-white font-extrabold text-base md:py-5 md:text-xl hover:scale-105 transition-transform'>Enviar</button>
         </form>
     </section>
   )

@@ -4,8 +4,8 @@ import bannerXL from "../assets/Banner_xl.png";
 
 const Banner = () => {
   return (
-    <section className="mb-16 sm:mb-20 mt-0 lg:bg-gradient-to-b from-primary via-primary/80 lg:mb-0 to-white lg:pb-36">
-      <div className="lg:flex lg:max-w-4xl mx-auto ">
+    <section className="mb-16 sm:mb-20 mt-0 lg:bg-gradient-to-b from-primary via-primary/80 lg:mb-0 to-white lg:pb-36 xl:pb-44 xl:pt-6">
+      <div className="lg:flex lg:max-w-4xl mx-auto xl:max-w-5xl">
         <div className="pb-6 bg-gradient-to-b from-primary via-primary/80 to-white flex justify-center order-1 lg:bg-none lg:w-1/2">
           <div className="sm:max-w-lg md:min-w-[700px] lg:min-w-0">
             <picture>
@@ -33,7 +33,7 @@ const Banner = () => {
               name="ubicación"
               id="location"
             />
-            <button className="bg-secondary py-3 rounded-lg text-white font-extrabold text-base sm:text-lg md:py-5 md:text-xl lg:py-3">
+            <button className="bg-secondary py-3 rounded-lg text-white font-extrabold text-base sm:text-lg md:py-5 md:text-xl lg:py-3 hover:scale-105 transition-transform">
               Iniciar pedido
             </button>
           </form>

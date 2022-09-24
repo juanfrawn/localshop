@@ -28,8 +28,10 @@ const BrandsCarrousell = () => {
       }}
     >
         {Brands.map((brand) => (
-            <SwiperSlide key={brand.url}>
-                <img src={brand.logo} alt={brand.name} />
+            <SwiperSlide key={brand.url} >
+                <a href={brand.url} target="_blank" rel="noreferrer" className='hover:scale-105'>
+                  <img src={brand.logo} alt={brand.name} />
+                </a>
             </SwiperSlide>
         ))}
     </Swiper>

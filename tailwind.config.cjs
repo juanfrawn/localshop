@@ -23,7 +23,7 @@ module.exports = {
         steps: "68px minmax(0, 1fr)",
         links: "32px minmax(0, 1fr)",
         navbar: "200px minmax(0, 1fr) 20px",
-        cards: "minmax(0, 450px) minmax(450px, 1fr)",
+        cards: "minmax(0, 400px) minmax(450px, 1fr)",
       },
     },
   },

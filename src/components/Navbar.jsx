@@ -12,9 +12,10 @@ import user from '../assets/user.svg'
 import delivery from '../assets/delivery.svg'
 
 import { Link } from "react-router-dom";
+import Carrito from "./Carrito";
 
 const Navbar = () => {
-  const { isMenuOpen, setIsMenuOpen } = useContext(AppContext);
+  const { isMenuOpen, setIsMenuOpen, showCart, setShowCart } = useContext(AppContext);
 
   const [showOptions, setShowOptions] = useState(false);
 
@@ -71,12 +72,13 @@ const Navbar = () => {
               <img src={search} alt="Buscar" className='sm:w-7' />
           </div>
           <div>
-            <Link to="/carrito">
+            <span onClick={() => setShowCart(!showCart)} className="cursor-pointer">
               <img src={cart} alt="Carrito" className='sm:w-5 lg:w-4' />
-            </Link>
+            </span>
           </div>
         </section>
       </div> 
+      <Carrito />
     </nav>
   )
 }

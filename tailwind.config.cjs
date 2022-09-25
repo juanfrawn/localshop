@@ -24,6 +24,8 @@ module.exports = {
         links: "32px minmax(0, 1fr)",
         navbar: "200px minmax(0, 1fr) 20px",
         cards: "minmax(0, 400px) minmax(450px, 1fr)",
+        carrito: "minmax(0, 100px) 1fr",
+        carritoXL: "minmax(0, 80px) 1fr",
       },
     },
   },

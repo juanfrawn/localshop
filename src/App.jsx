@@ -8,6 +8,9 @@ import Blog from './pages/Blog'
 import PreguntasFrecuentes from './pages/PreguntasFrecuentes'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Cliente from './pages/Cliente'
+import Shopper from './pages/Shopper'
+import Tienda from './pages/Tienda'
 
 
 import './App.css'
@@ -23,6 +26,9 @@ function App() {
         <Route path="/FAQ" element={<PreguntasFrecuentes />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Cliente" element={<Cliente />} />
+        <Route path="/Shopper" element={<Shopper />} />
+        <Route path="/Tienda" element={<Tienda />} />
       </Routes>
     </div>
   )

@@ -69,9 +69,9 @@ const Navbar = () => {
           </ul>
         </section>
         <section className='flex items-center'>
-          <div className='mr-5 lg:hidden'>
+          <Link to="/search" className='mr-5 lg:hidden'>
               <img src={search} alt="Buscar" className='sm:w-7' />
-          </div>
+          </Link>
           <div>
             <span onClick={() => setShowCart(!showCart)} className="cursor-pointer">
               <img src={cart} alt="Carrito" className='sm:w-5 lg:w-4' />

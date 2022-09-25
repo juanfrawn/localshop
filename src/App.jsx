@@ -12,6 +12,7 @@ import Cliente from './pages/Cliente'
 import Shopper from './pages/Shopper'
 import Tienda from './pages/Tienda'
 import Cuenta from "./pages/Cuenta";
+import Search from "./pages/Search";
 
 
 import './App.css'
@@ -31,6 +32,7 @@ function App() {
         <Route path="/shopper" element={<Shopper />} />
         <Route path="/tienda" element={<Tienda />} />
         <Route path="/cuenta" element={<Cuenta />} />
+        <Route path="/Search" element={<Search />} />
       </Routes>
     </div>
   )

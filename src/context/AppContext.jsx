@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showCart, setShowCart] = useState(false)
     const [user, setUser] = useState(null)
+    const [location, setLocation] = useState('')
     
     return (
         <AppContext.Provider value={{
@@ -15,7 +16,9 @@ export const AppProvider = ({ children }) => {
             showCart,
             setShowCart,
             user,
-            setUser
+            setUser,
+            location,
+            setLocation
         }}>
             {children}
         </AppContext.Provider>

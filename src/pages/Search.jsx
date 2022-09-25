@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 import LocalCard from "../components/LocalCard";
 
@@ -7,12 +8,18 @@ import { categories } from "../Utils/categories";
 import local from "../assets/local.jpg";
 import local2 from "../assets/local2.jpg";
 import local3 from "../assets/local3.jpg";
+import locationIcon from "../assets/location.svg";
 
 const Search = () => {
+  const { location } = useContext(AppContext);
   return (
     <section className="px-2 sm:max-w-lg mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
-      <h1 className="text-2xl my-4 font-extrabold text-primary">
+      <h1 className="text-2xl my-4 font-extrabold text-primary lg:flex lg:justify-between lg:items-center">
         ¿Que necesitas hoy?
+        <span className="hidden lg:flex items-center text-title">
+          <img src={locationIcon} alt="local" className="w-6" />
+          <span className="text-base">{location}</span>
+        </span>
       </h1>
       <form className="mb-4">
         <input

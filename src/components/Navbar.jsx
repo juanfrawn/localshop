@@ -28,7 +28,9 @@ const Navbar = () => {
           <img src={isMenuOpen ? close : menu} alt="Menú" className='w-7 md:w-11' />
         </div>
         <div>
-          <Link to="/">
+          <Link to="/" onClick={() => {
+            setIsMenuOpen(false);
+          }}>
           <picture>
             <source srcset={logoLG} media='(min-width: 1024px)' />
             <img src={logo} alt="Logo" className='w-32 md:w-52 lg:w-44' />
@@ -69,11 +71,16 @@ const Navbar = () => {
           </ul>
         </section>
         <section className='flex items-center'>
-          <Link to="/search" className='mr-5 lg:hidden'>
+          <Link to="/search" className='mr-5 lg:hidden' onClick={() => {
+            setIsMenuOpen(false);
+          }}>
               <img src={search} alt="Buscar" className='sm:w-7' />
           </Link>
           <div>
-            <span onClick={() => setShowCart(!showCart)} className="cursor-pointer">
+            <span onClick={() => {
+                setShowCart(!showCart)
+                setIsMenuOpen(false)
+              }} className="cursor-pointer">
               <img src={cart} alt="Carrito" className='sm:w-5 lg:w-4' />
             </span>
           </div>

@@ -18,7 +18,7 @@ const CarritoCards = ({ producto, total, img}) => {
         </div>
         <div className="flex justify-between self-center">
             <div>
-                <h3 className="font-extrabold text-lg">{producto}</h3>
+                <h3 className="font-extrabold text-base">{producto}</h3>
                 <span className="font-extrabold">$ {total}</span>
             </div>
             <div className="self-center">

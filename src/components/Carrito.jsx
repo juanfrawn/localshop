@@ -23,12 +23,12 @@ const Carrito = () => {
     }, [showCart]);
 
   return (
-    <section className={`${showCart ? 'w-full' : 'w-0'} h-screen max-w-sm bg-white/90 absolute top-0 right-0 z-10 duration-1000`}>
-        <div className={`text-title ${carritoContent ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}>
+    <section className={`${showCart ? 'w-full' : 'w-0'} h-screen max-w-sm bg-white/90 absolute top-0 right-0 z-10 duration-700`}>
+        <div className={`text-title ${carritoContent ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
             <div className={carritoContent ? '' : 'hidden'}>
-            <div className="flex justify-between px-4">
-                <h3 className="text-center font-extrabold text-4xl my-10 lg:text-3xl">Tu carrito</h3>
-                <img className="w-10 cursor-pointer lg:w-7" src={close} alt="Cerrar carrito" onClick={() => setShowCart(false)} />
+            <div className="flex justify-between px-6">
+                <h3 className="text-center font-extrabold text-3xl my-10 lg:text-3xl">Tu carrito</h3>
+                <img className="w-8 cursor-pointer lg:w-7" src={close} alt="Cerrar carrito" onClick={() => setShowCart(false)} />
             </div>
 
             <div>

@@ -1,22 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 6px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #eb6f00;
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #c66007;
+}
+
 @media screen and (min-width: 1920px) {
-    body {
-        zoom: 1.2;
-    }
+  body {
+    zoom: 1.1;
+  }
 }
 
 @media screen and (min-width: 2500px) {
-    body {
-        zoom: 1.5;
-    }
+  body {
+    zoom: 1.5;
+  }
 }
 
 @media screen and (min-width: 3840px) {
-    body {
-        zoom: 2;
-    }
+  body {
+    zoom: 2;
+  }
 }

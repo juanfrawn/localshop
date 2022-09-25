@@ -26,6 +26,7 @@ module.exports = {
         cards: "minmax(0, 400px) minmax(450px, 1fr)",
         carrito: "minmax(0, 100px) 1fr",
         carritoXL: "minmax(0, 80px) 1fr",
+        usuario: "minmax(0, 250px) 1fr",
       },
     },
   },

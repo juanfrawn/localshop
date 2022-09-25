@@ -22,7 +22,7 @@ const NavigationMenu = () => {
     }, [isMenuOpen]);
     
   return (
-    <div className={`h-screen w-screen bg-primary fixed top-0 transition-all duration-500 ${isMenuOpen ? 'w-full' : 'w-0'} lg:hidden `}>
+    <div className={`h-screen bg-primary fixed top-0 transition-all duration-500 ${isMenuOpen ? 'w-full' : 'w-0'} lg:hidden `}>
       <nav className="p-5">
         <div className="flex justify-between sm:max-w-lg sm:mx-auto md:max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-navbar">
           <div className="flex items-center lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>

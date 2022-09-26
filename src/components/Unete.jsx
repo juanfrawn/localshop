@@ -1,4 +1,4 @@
-import UneteCard from "./UneteCard"
+import UneteCard from "./cards/UneteCard"
 
 import tienda from "../assets/tienda.webp"
 import shopper from "../assets/shopper.webp"

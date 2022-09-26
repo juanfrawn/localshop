@@ -10,7 +10,7 @@ import Brands from "../components/Brands";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Banner />
       <PasosContainer />
       <Downloads />
@@ -19,7 +19,7 @@ const Home = () => {
       <Brands />
       <Newsletter />
       <Footer />
-    </div>
+    </>
   );
 };
 

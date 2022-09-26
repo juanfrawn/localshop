@@ -1,4 +1,4 @@
-import BlogCard from '../components/BlogCard'
+import BlogCard from '../components/cards/BlogCard'
 
 import bgBlog from '../assets/blog.webp'
 import blog1 from '../assets/blog1.webp'

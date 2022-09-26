@@ -1,5 +1,5 @@
-import clock from "../assets/time.svg";
-import fav from "../assets/fav.svg";
+import clock from "../../assets/time.svg";
+import fav from "../../assets/fav.svg";
 
 const LocalCard = ({ title, category, address, time, stars, img}) => {
   return (

@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
         </div>
         <section className='hidden lg:block self-center'>
-          <ul className='flex justify-end items-center gap-x-8 mr-8'>
+          <ul className='flex justify-end items-center gap-x-8 mr-8 tracking-wide'>
             <li>
               <Link to="/blog" className='text-white text-sm font-bold'>Blog</Link>
             </li>

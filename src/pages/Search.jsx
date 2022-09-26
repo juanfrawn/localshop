@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
-import LocalCard from "../components/LocalCard";
+import LocalCard from "../components/cards/LocalCard";
 
 import { categories } from "../Utils/categories";
 import local from "../assets/local.webp";

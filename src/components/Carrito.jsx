@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
-import CarritoCards from "./CarritoCards"
+import CarritoCards from "./cards/CarritoCards"
 
 import producto1 from '../assets/producto_1.webp'
 import producto2 from '../assets/producto_2.webp'

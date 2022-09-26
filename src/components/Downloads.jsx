@@ -1,4 +1,4 @@
-import BotonComprar from "./BotonComprar"
+import BotonComprar from "./buttons/BotonComprar"
 
 import whatsapp from "../assets/whatsapp.svg"
 import play_store from '../assets/play_store.svg'

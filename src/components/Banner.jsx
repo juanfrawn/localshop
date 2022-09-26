@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 
-import banner from "../assets/Banner.png";
-import bannerLG from "../assets/Banner_lg.png";
-import bannerXL from "../assets/Banner_xl.png";
+import banner from "../assets/Banner.webp";
+import bannerLG from "../assets/Banner_lg.webp";
+import bannerXL from "../assets/Banner_xl.webp";
 
 const Banner = () => {
   const navigate = useNavigate();

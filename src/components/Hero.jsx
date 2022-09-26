@@ -1,4 +1,4 @@
-import comrpomiso from '../assets/compromiso.png'
+import comrpomiso from '../assets/compromiso.webp'
 
 const Hero = () => {
   return (

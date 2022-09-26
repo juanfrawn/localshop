@@ -1,8 +1,8 @@
 import PasoItem from './PasoItem'
 
-import paso1 from '../assets/paso_1.png'
-import paso2 from '../assets/paso_2.png'
-import paso3 from '../assets/paso_3.png'
+import paso1 from '../assets/paso_1.webp'
+import paso2 from '../assets/paso_2.webp'
+import paso3 from '../assets/paso_3.webp'
 
 const PasosContainer = () => {
   return (

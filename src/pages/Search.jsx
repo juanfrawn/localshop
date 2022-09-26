@@ -5,9 +5,9 @@ import { AppContext } from "../context/AppContext";
 import LocalCard from "../components/LocalCard";
 
 import { categories } from "../Utils/categories";
-import local from "../assets/local.jpg";
-import local2 from "../assets/local2.jpg";
-import local3 from "../assets/local3.jpg";
+import local from "../assets/local.webp";
+import local2 from "../assets/local2.webp";
+import local3 from "../assets/local3.webp";
 import locationIcon from "../assets/location.svg";
 
 const Search = () => {

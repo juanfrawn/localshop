@@ -1,9 +1,9 @@
 import BlogCard from '../components/BlogCard'
 
-import bgBlog from '../assets/blog.jpg'
-import blog1 from '../assets/blog1.jpg'
-import blog2 from '../assets/blog2.jpg'
-import blog3 from '../assets/blog3.jpg'
+import bgBlog from '../assets/blog.webp'
+import blog1 from '../assets/blog1.webp'
+import blog2 from '../assets/blog2.webp'
+import blog3 from '../assets/blog3.webp'
 
 const Blog = () => {
   return (

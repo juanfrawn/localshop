@@ -2,7 +2,14 @@ import React from 'react'
 import{ useContext } from 'react'
 import { AppContext } from '../context/AppContext'
 
+import CuentaOptions from '../components/containers/CuentaOptions'
+import CuentaUpdate from '../components/containers/CuentaUpdate'
 import CuentaOption from '../components/CuentaOption'
+
+import CuentaForm from '../components/form/CuentaForm'
+import InputPrincipal from '../components/inputs/InputPrincipal'
+import InputSecondary from '../components/inputs/InputSecondary'
+import BotonPrincipal from '../components/buttons/BotonPrincipal'
 
 import profile from '../assets/profile.webp'
 import setting from '../assets/Profile/user.svg'
@@ -18,50 +25,42 @@ const Cuenta = () => {
 
   return (
     <section className='lg:grid lg:grid-cols-usuario max-w-5xl mx-auto'>
-    <section className='flex flex-col text-center my-4 md:my-8'>
-        <section className='w-[100px] mx-auto mb-4 md:w-[150px] md:mb-6 lg:w-[80px]'>
-            <img src={profile} alt="Usuario" className='rounded-full' />
-        </section>
-        <h1 className='font-extrabold text-xl mb-4 md:text-2xxl lg:text-xl'>Hola <span>{user?.name || 'Juan'}</span></h1>
+      <section className='flex flex-col text-center my-4 md:my-8'>
+          <section className='w-[100px] mx-auto mb-4 md:w-[150px] md:mb-6 lg:w-[80px]'>
+              <img src={profile} alt="Usuario" className='rounded-full' />
+          </section>
+          <h1 className='font-extrabold text-xl mb-4 md:text-2xxl lg:text-xl'>Hola <span>{user?.name || 'Juan'}</span></h1>
+          <CuentaOptions>
+              <CuentaOption title="Perfil general" img={setting} />
+              <CuentaOption title="Mi saldo" img={cash} />
+              <CuentaOption title="Metodos de pago" img={cards} />
+              <CuentaOption title="Historial de pedidos" img={pick} />
+              <CuentaOption title="Cupones" img={cupones} />
+              <CuentaOption title="Cerrar sesión" img={signout} />
+          </CuentaOptions>
 
-        <section className='px-4 max-w-lg mx-auto md:max-w-2xl lg:px-0'>
-            <CuentaOption title="Perfil general" img={setting} />
-
-            <CuentaOption title="Mi saldo" img={cash} />
-
-            <CuentaOption title="Metodos de pago" img={cards} />
-
-            <CuentaOption title="Historial de pedidos" img={pick} />
-
-            <CuentaOption title="Cupones" img={cupones} />
-
-            <CuentaOption title="Cerrar sesión" img={signout} />
-        </section>
-    </section>
-    <section className='hidden lg:block px-8'>
+      </section>
+    <CuentaUpdate>
         <h1 className='my-10 text-3xl font-extrabold'>Perfil General</h1>
-        <section className=''>
-        <form className='flex flex-col' onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="email" className='text-start'>Email</label>
-        <input type='email' id='email' className='border-2 mb-6 p-1 px-2 rounded-md' />
-        <label htmlFor="password" className='text-start'>Contraseña</label>
-        <input type='password' id='password' className='border-2 mb-6 p-1 px-2 rounded-md' />
-        <label htmlFor="name" className='text-start'>Nombre</label>
-        <input type='text' id='name' className='border-2 mb-6 p-1 px-2 rounded-md' value={user.firstName} />
-        <label htmlFor="last_name" className='text-start'>Apellido</label>
-        <input type='text' id='last_name' className='border-2 mb-6 p-1 px-2 rounded-md' value={user.lastName} />
-        <label htmlFor="address" className='text-start'>Teléfono</label>
-        <div className='flex mb-4 items-stretch'>
-          <span className='bg-stone-300/50 self-center py-3 px-3'>+56</span>
-          <input type='text' id='address' className='w-full border-6 p-1 px-2 rounded-md' value={user.number} />
-        </div>
-        <label htmlFor="address" className='text-start'>Dirección</label>
-        <input type='text' id='address' className='border-2 mb-6 p-1 px-2 rounded-md' value={user.address} />
-        
-        <button className='bg-primary text-white font-extrabold p-2 rounded-lg'>Actualizar</button>
-      </form>
+        <section>
+          <CuentaForm>
+            <label htmlFor="email" className='text-start'>Email</label>
+            <InputPrincipal type="email" id="email" placeholder="Email" />
+            <label htmlFor="password" className='text-start'>Contraseña</label>
+            <InputPrincipal type="password" id="password" placeholder="Contraseña" />
+            <label htmlFor="name" className='text-start'>Nombre</label>
+            <InputPrincipal type="text" id="name" placeholder="Nombre" value={user.firstName} />
+            <label htmlFor="last_name" className='text-start'>Apellido</label>
+            <InputPrincipal type="text" id="last_name" placeholder="Apellido" value={user.lastName} />
+            <label htmlFor="number" className='text-start'>Teléfono</label>
+            <InputSecondary text="+56" type="text" id="number" value={user.phone} />
+            <label htmlFor="address" className='text-start'>Dirección</label>
+            <InputPrincipal type="text" id="address" placeholder="Dirección" value={user.address} />
+
+            <BotonPrincipal title="Actualizar" color="primary" />
+            </CuentaForm>
         </section>
-    </section>
+    </CuentaUpdate>
     </section>
   )
 }

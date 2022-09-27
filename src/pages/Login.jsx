@@ -3,6 +3,10 @@ import { Link, useNavigate  } from 'react-router-dom'
 
 import { AppContext } from '../context/AppContext'
 
+import LoginForm from '../components/form/LoginForm'
+import InputLogin from '../components/inputs/InputLogin'
+import BotonPrincipal from '../components/buttons/BotonPrincipal'
+
 const Login = () => {
     const { user, setUser } = useContext(AppContext)
     const navigate = useNavigate()
@@ -16,11 +20,11 @@ const Login = () => {
   return (
     <section className='text-center mt-20'>
       <h1 className='text-2xxl font-extrabold text-primary mb-6 md:text-3xl md:mb-8 lg:text-5xl lg:mb-10'>Inicia sesión</h1>
-      <form className='flex flex-col max-w-lg px-4 mb-4 mx-auto' onSubmit={handleLogin}>
-        <input type='email' placeholder='Email' className='border-2 mb-3 p-3 px-2 rounded-md' />
-        <input type='password' placeholder='Contraseña' className='border-2 mb-3 p-3 px-2 rounded-md' />
-        <button className='bg-primary text-white font-extrabold p-3 rounded-lg'>Iniciar sesión</button>
-      </form>
+      <LoginForm handleLogin={handleLogin}>
+        <InputLogin type="email" placeholder="Email" />
+        <InputLogin type='password' placeholder='Contraseña' />
+        <BotonPrincipal title='Iniciar sesión' color="primary" />
+      </LoginForm>
       <p className='text-title'>¿No tienes cuenta? <Link to="/register" className='text-primary'>Registrate</Link></p>
       <Link to="/password" className=' text-primary'>¿Olvidaste tu contraseña?</Link>
     </section>

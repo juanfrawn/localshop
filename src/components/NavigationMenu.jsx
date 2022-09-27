@@ -24,7 +24,7 @@ const NavigationMenu = () => {
   return (
     <div className={`navbar__menu ${isMenuOpen ? 'w-full' : 'w-0'} `}>
       <section className="m-10 z-20">
-        <div className={`navbar__menu__content ${navbarContent ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`navbar__menu__content ${navbarContent ? 'opacity-100' : 'opacity-0 hidden'}`}>
             <Link to="/" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Home</Link>
             <Link to="/blog" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Blog</Link>
             <Link to="/faq" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Preguntas Frecuentes</Link>

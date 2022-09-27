@@ -1,7 +1,7 @@
 
 const RegisterContainer = ({children}) => {
   return (
-    <section className='text-center my-10'>
+    <section className='register__container'>
         {children}
     </section>
   )

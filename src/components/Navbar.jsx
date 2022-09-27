@@ -74,7 +74,7 @@ const Navbar = () => {
         </section>
 
         <section className='nabvar__buttons__container'>
-          <Link to="/search" className='mr-5 lg:hidden' onClick={() => {
+          <Link to="/search" className='mr-5 lg:mr-3 lg:w-6' onClick={() => {
             setIsMenuOpen(false);
           }}>
               <img src={search} alt="Buscar" className='sm:w-7' />

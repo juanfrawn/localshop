@@ -8,13 +8,13 @@ import InputLogin from '../components/inputs/InputLogin'
 import BotonPrincipal from '../components/buttons/BotonPrincipal'
 
 const Login = () => {
-    const { user, setUser } = useContext(AppContext)
+    const { setUser } = useContext(AppContext)
     const navigate = useNavigate()
 
     const handleLogin = (e) => {
         e.preventDefault()
         setUser({ firstName: 'Juan', lastName: 'Ramirez' , email: 'juan@localshop.cl', number: '12345678', address:'Calle 1' })
-        navigate("/");
+        navigate("/cuenta");
     }
 
   return (

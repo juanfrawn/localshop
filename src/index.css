@@ -92,6 +92,26 @@ body::-webkit-scrollbar-thumb:hover {
   .carrito__container {
     @apply h-screen max-w-sm bg-white/90 absolute top-0 right-0 z-10 duration-700
   }
+
+  .carrito__header {
+    @apply flex justify-between px-6
+  }
+
+  .carrito__header-title {
+    @apply text-center font-extrabold text-3xl my-10 lg:text-3xl
+  }
+
+  .carrito__header-icon {
+    @apply w-8 cursor-pointer lg:w-7
+  }
+
+  .carrito__total {
+    @apply flex justify-between px-4 font-extrabold text-xl mb-4
+  }
+
+  .carrito__button {
+    @apply font-extrabold text-xl px-2 lg:px-8
+  }
 }
 
 /* Header */
@@ -279,5 +299,141 @@ body::-webkit-scrollbar-thumb:hover {
 
   .footer__description {
     @apply text-white text-center
+  }
+}
+
+/* Botones */
+@layer components {
+  .boton__principal {
+    @apply py-3 rounded-lg text-white font-extrabold text-base sm:text-lg md:py-5 md:text-xl lg:py-4 hover:scale-105 transition-transform
+  }
+}
+
+/* Cards */
+@layer components {
+  .blog__card {
+    @apply max-w-sm mx-auto px-2 mb-12 lg:max-w-[33%]
+  }
+
+  .blog__card__image {
+    @apply h-36 overflow-hidden rounded-t-xl
+  }
+
+  .blog__card__title {
+    @apply font-extrabold my-3 text-xl text-primary
+  }
+
+  .blog__card__description {
+    @apply px-1 text-sm text-zinc-500
+  }
+
+  .carrito__card {
+    @apply grid grid-cols-carrito lg:grid-cols-carritoXL px-2 mb-8
+  }
+
+  .carrito__card__content {
+    @apply flex justify-between self-center
+  }
+
+  .carrito__card__item__name {
+    @apply font-extrabold text-base
+  }
+
+  .carrito__card__item__price {
+    @apply font-extrabold
+  }
+
+  .carrito__card__item__quantity {
+    @apply font-extrabold
+  }
+
+  .carrito__card__item__quantity__btn {
+    @apply w-6 bg-stone-300/70 rounded-md mx-2
+  }
+
+  .local__card {
+    @apply rounded-xl mb-8 sm:max-w-lg md:max-w-xs lg:max-w-[32%] mx-auto
+  }
+
+  .local__card__image {
+    @apply rounded-t-xl
+  }
+
+  .local__card__content {
+    @apply flex justify-between
+  }
+
+  .local__card__title {
+    @apply font-extrabold text-xl text-title mt-2
+  }
+
+  .local__card__description {
+    @apply text-xs text-neutral-600 mb-2
+  }
+
+  .local__card__time {
+    @apply text-xs flex items-center text-neutral-600
+  }
+
+  .local__card__stars {
+    @apply font-extrabold text-title
+  }
+}
+
+/* Containers */
+@layer components {
+  .blog__categories__container {
+    @apply max-w-4xl mx-auto lg:max-w-4xl xl:max-w-5xl md:mb-10
+  }
+
+  .blog__container {
+    @apply max-w-4xl mx-auto lg:max-w-none md:mb-10
+  }
+
+  .blog__section {
+    @apply flex flex-wrap justify-start lg:max-w-4xl xl:max-w-5xl mx-auto md:mb-10
+  }
+
+  .cuenta__options__container {
+    @apply px-4 max-w-lg mx-auto md:max-w-2xl lg:px-0
+  }
+
+  .cuenta__update__container {
+    @apply hidden lg:block px-8
+  }
+
+  .register__container {
+    @apply text-center my-10
+  }
+
+  .register__options__container {
+    @apply flex max-w-lg mx-auto px-2 justify-center flex-col md:flex-row md:gap-x-6 lg:max-w-5xl
+  }
+
+  .search__container {
+    @apply px-2 sm:max-w-lg mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-5xl
+  }
+}
+
+/* Inputs */
+@layer components {
+  .input__login {
+    @apply border-2 mb-3 p-3 px-2 rounded-md
+  }
+
+  .input__principal {
+    @apply border-2 mb-3 p-3 px-2 rounded-md w-full
+  }
+
+  .input__secondary {
+    @apply flex mb-3 items-stretch
+  }
+
+  .input__secondary-text {
+    @apply bg-stone-300/50 self-center py-3 px-3
+  }
+
+  .input__secundary-input {
+    @apply w-full border-2 p-3 px-2 rounded-md
   }
 }

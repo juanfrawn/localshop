@@ -1,6 +1,6 @@
 const CuentaUpdate = ({ children }) => {
   return (
-    <section className='hidden lg:block px-8'>{children}</section >
+    <section className='cuenta__update__container'>{children}</section >
   )
 }
 

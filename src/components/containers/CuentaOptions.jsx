@@ -1,6 +1,6 @@
 const CuentaOptions = ({ children }) => {
   return (
-    <section className="px-4 max-w-lg mx-auto md:max-w-2xl lg:px-0">{children}</section>
+    <section className="cuenta__options__container">{children}</section>
   )
 }
 

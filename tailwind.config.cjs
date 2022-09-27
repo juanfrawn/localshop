@@ -22,7 +22,7 @@ module.exports = {
       gridTemplateColumns: {
         steps: "68px minmax(0, 1fr)",
         links: "32px minmax(0, 1fr)",
-        navbar: "200px minmax(0, 1fr) 20px",
+        navbar: "200px minmax(0, 1fr) 50px",
         cards: "minmax(0, 400px) minmax(450px, 1fr)",
         carrito: "minmax(0, 70px) 1fr",
         carritoXL: "minmax(0, 80px) 1fr",

@@ -12,19 +12,19 @@ const CarritoCards = ({ producto, total, img}) => {
     }
 
   return (
-    <article className="grid grid-cols-carrito lg:grid-cols-carritoXL px-2 mb-8">
+    <article className="carrito__card">
         <div>
-            <img src={img} alt=""/>
+            <img src={img} alt="Carrito item"/>
         </div>
-        <div className="flex justify-between self-center">
+        <div className="carrito__card__content">
             <div>
-                <h3 className="font-extrabold text-base">{producto}</h3>
-                <span className="font-extrabold">$ {total}</span>
+                <h3 className="carrito__card__item__name">{producto}</h3>
+                <span className="carrito__card__item__price">$ {total}</span>
             </div>
             <div className="self-center">
-                <button className="w-6 bg-stone-300/70 rounded-md mx-2" onClick={handleDecrement}>-</button>
+                <button className="carrito__card__item__quantity__btn" onClick={handleDecrement}>-</button>
                 <span className="font-extrabold">{count}</span>
-                <button className="w-6 bg-stone-300/70 rounded-md mx-2" onClick={() => setCount(count + 1)}>+</button>
+                <button className="carrito__card__item__quantity__btn" onClick={() => setCount(count + 1)}>+</button>
             </div>
         </div>
     </article>

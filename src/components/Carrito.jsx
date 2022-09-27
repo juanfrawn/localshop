@@ -2,15 +2,32 @@ import { useContext, useState, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
 import CarritoCards from "./cards/CarritoCards"
 
-import producto1 from '../assets/producto_1.webp'
-import producto2 from '../assets/producto_2.webp'
-
 import close from '../assets/close.svg'
 
 const Carrito = () => {
-    const { showCart, setShowCart } = useContext(AppContext)
+    const { showCart, setShowCart, productos, setProductos } = useContext(AppContext)
 
     const [carritoContent, setCarritoContent] = useState(false);
+    const [subTotal, setSubTotal] = useState(0);
+    const [shopperPercent, setShopperPercent] = useState(0);
+
+
+    const handleSubTotal = () => {
+        let total = 0
+        productos.forEach(producto => {
+            total += (producto.total * producto.count)
+        })
+        setSubTotal(total)
+    }
+
+    const handlePercent = () => {
+        setShopperPercent(subTotal * 0.1)
+    }
+
+    useEffect(() => {
+        handleSubTotal()
+        handlePercent()
+    }, [productos, subTotal])
 
     useEffect(() => {
         if (showCart) {
@@ -32,14 +49,27 @@ const Carrito = () => {
                 </div>
     
                 <div>
-                    <CarritoCards img={producto1} producto="Agua con sabor" total={2990} />
-                    <CarritoCards img={producto2} producto="Papas fritas" total={2990} />
-                    <CarritoCards img={producto1} producto="Agua con sabor" total={2990} />
+                    {productos.map(producto => (
+                        <CarritoCards key={producto.id} product={producto} producto={producto.producto} total={producto.total} img={producto.img} count={producto.count} />
+                    ))}
+                </div>
+
+                <div className="carrito__footer">
+                    <div className="flex justify-between px-4">
+                        <p className="">Subtotal</p>
+                        <p className="">$ {subTotal}</p>
+                    </div>
+                    <div className="flex justify-between px-4 mb-2">
+                        <p className="">Shopper</p>
+                        <p className="">$ {shopperPercent}</p>
+                    </div>
                 </div>
     
                 <div className="carrito__total">
                     <h3 className="">Total</h3>
-                    <h3>$ 5990</h3>
+                    <h3>$ {
+                        subTotal + shopperPercent   
+                    }</h3>
                 </div>
     
                 <div className="carrito__button">

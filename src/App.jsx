@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import NavigationMenu from "./components/NavigationMenu";
 import Navbar from "./components/Navbar";
+import BotonWhatsapp from "./components/buttons/BotonWhatsapp";
 
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
@@ -19,6 +20,7 @@ function App() {
     <div className="font-nunito">
       <Navbar />
       <NavigationMenu />
+      <BotonWhatsapp />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />

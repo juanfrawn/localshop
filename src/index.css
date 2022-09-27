@@ -39,3 +39,245 @@ body::-webkit-scrollbar-thumb:hover {
     zoom: 2;
   }
 }
+
+/* Navbar */
+@layer components {
+  .navbar {
+    @apply px-5 py-3 bg-primary sticky top-0 left-0 z-10
+  }
+
+  .navbar__container {
+    @apply flex justify-between sm:max-w-lg sm:mx-auto md:max-w-2xl lg:max-w-4xl lg:grid lg:grid-cols-navbar xl:max-w-5xl
+  }
+
+  .navbar__menu {
+    @apply h-screen bg-primary fixed top-14 transition-all duration-500 lg:hidden z-10
+  }
+
+  .navbar__menu-icon {
+    @apply flex items-center lg:hidden hover:cursor-pointer
+  }
+
+  .navbar__menu__content {
+    @apply font-extrabold text-white flex flex-col text-lg transition-opacity duration-200 
+  }
+
+  .navbar__links {
+    @apply hidden lg:block self-center
+  }
+
+  .navbar__links__container {
+    @apply flex justify-end items-center gap-x-8 mr-8 tracking-wide
+  }
+
+  .navbar__links__items {
+    @apply text-white text-sm font-bold
+  }
+
+  .navbar__links__register__container {
+    @apply absolute top-5 pt-3 -left-2  bg-primary/90 backdrop-blur-lg rounded-lg text-sm font-extrabold text-white transition-all
+  }
+
+  .navbar__links__register__items {
+    @apply flex items-center hover:bg-orange-700/30 pt-2 pb-3 cursor-pointer pl-2 pr-6 transition-colors
+  }
+
+  .nabvar__buttons__container {
+    @apply flex items-center
+  }
+}
+
+/* Carrito */
+@layer components {
+  .carrito__container {
+    @apply h-screen max-w-sm bg-white/90 absolute top-0 right-0 z-10 duration-700
+  }
+}
+
+/* Header */
+@layer components {
+  .banner {
+      @apply mb-16 sm:mb-20 mt-0 lg:bg-gradient-to-b from-primary via-primary/80 lg:mb-0 to-white lg:pb-36 xl:pb-44 xl:pt-6
+  }
+
+  .banner__container {
+    @apply lg:flex lg:max-w-4xl mx-auto xl:max-w-5xl
+  }
+
+  .banner__image {
+      @apply pb-6 bg-gradient-to-b from-primary via-primary/80 to-white flex justify-center order-1 lg:bg-none lg:w-1/2
+  }
+
+  .banner__content {
+    @apply lg:w-1/2 self-center
+  }
+
+  .banner__text {
+    @apply text-center mb-7 md:mb-12 lg:mb-5
+  }
+
+  .banner__title {
+    @apply text-2xxl md:text-6xl sm:text-4xl font-extrabold text-primary lg:text-white lg:text-start
+  }
+
+  .banner__description {
+    @apply text-base sm:text-xs md:text-2xl lg:text-white lg:text-start
+  }
+
+  .banner__font {
+    @apply flex flex-col text-center px-5 sm:max-w-lg sm:mx-auto md:max-w-xl lg:px-0 lg:mr-8
+  }
+}
+
+/* Pasos */
+@layer components {
+  .pasos__container {
+    @apply mb-16 sm:max-w-lg sm:mb-20 mx-auto md:flex md:max-w-3xl lg:-mt-28 lg:max-w-4xl xl:max-w-5xl
+  }
+  .pasos__item {
+    @apply grid grid-cols-steps mb-9 px-3 sm:mb-10 md:flex md:flex-col md:text-center md:w-1/3
+  }
+
+  .pasos__item__image {
+    @apply md:mx-auto md:w-28 md:mb-4
+  }
+
+  .pasos__item__content {
+    @apply px-2 self-center
+  }
+
+  .pasos__item__title {
+    @apply text-lg sm:text-xl text-primary font-extrabold md:mb-2 lg:text-2xl
+  }
+
+  .pasos__item__description {
+    @apply text-sm sm:text-base text-subtitle
+  }
+}
+
+/* Downloads */
+@layer components {
+  .downloads__container {
+    @apply mb-16 sm:max-w-lg sm:mx-auto md:max-w-3xl md:grid md:grid-cols-2 lg:max-w-4xl xl:max-w-5xl
+  }
+
+  .download__button {
+    @apply text-base w-11/12 mx-auto mb-8 rounded-lg flex items-center text-white py-3 justify-center sm:text-lg lg:text-base hover:scale-105 transition-transform
+  }
+}
+
+/* Unete */
+@layer components {
+  .unete__container {
+    @apply text-center mb-16 sm:max-w-lg sm:mx-auto md:max-w-3xl lg:max-w-4xl xl:max-w-5xl
+  }
+
+  .unete__title {
+    @apply mb-11 font-extrabold text-title text-xl sm:text-2xxl md:text-4xl
+  }
+
+  .unete__cards__container {
+    @apply px-2 md:grid md:grid-cols-2 md:gap-x-4 md:px-0 lg:grid-cols-1
+  }
+
+  .unete__cards__item {
+    @apply bg-item rounded-xl mb-6 pb-2 max-w-lg mx-auto lg:max-w-none lg:grid lg:grid-cols-cards xl:w-[920px]
+  }
+
+  .unete__cards__item__image {
+    @apply rounded-xl rounded-b-none w-full lg:h-full lg:object-cover lg:rounded-l-xl lg:rounded-none
+  }
+
+  .unete__cards__item__content {
+    @apply lg:text-start lg:px-4 lg:place-self-center
+  }
+
+  .unete__cards__item__title {
+    @apply text-primary font-extrabold text-xl my-4 sm:text-2xl lg:mt-6 lg:mb-2
+  }
+
+  .unete__cards__item__description {
+    @apply text-title font-semibold text-sm px-10 mb-5 sm:text-base lg:px-0 lg:pr-20 xl:pr-20
+  }
+
+  .unete__cards__item__button {
+    @apply border-2 block w-max mx-auto border-primary text-primary font-extrabold rounded-lg p-2 px-8 text-sm mb-4 sm:text-base hover:scale-105 transition-transform
+  }
+}
+
+/* Hero */
+@layer components {
+  .hero__container {
+    @apply bg-secondary text-center text-white py-10 mb-16 lg:py-14
+  }
+
+  .hero__image {
+    @apply w-20 mx-auto mb-4 lg:w-28 lg:mb-8
+  }
+
+  .hero__title {
+    @apply font-extrabold text-2xl mb-3 sm:text-2xxl lg:text-4xl
+  }
+
+  .hero__description {
+    @apply font-semibold px-4 text-sm sm:px-10 sm:text-base md:px-40 lg:text-lg lg:px-20
+  }
+}
+
+/* Brands */
+@layer components {
+  .brands__container {
+    @apply px-4 text-center mb-16 lg:max-w-4xl lg:mx-auto xl:max-w-5xl lg:mb-20
+  }
+
+  .brands__title {
+    @apply mb-11 font-extrabold text-title text-xl sm:text-2xl md:text-4xl lg:mb-16
+  }
+
+}
+
+/* Newsletter */
+@layer components {
+  .newsletter__container {
+    @apply mb-16 text-center
+  }
+
+  .newsletter__title {
+    @apply text-4xl font-extrabold text-primary mb-1 sm:text-5xl sm:mb-4
+  }
+
+  .newsletter__subtitle {
+    @apply font-extrabold -mb-1 sm:text-lg
+  }
+
+  .newsletter__description {
+    @apply text-sm mb-4 sm:text-base sm:px-4 sm:mb-8 md:w-96 md:mx-auto md:mb-6
+  }
+
+  .newsletter__form {
+    @apply flex flex-col text-center px-5 sm:max-w-lg sm:mx-auto md:max-w-xl
+  }
+
+  .newsletter__input {
+    @apply bg-item text-center py-3 rounded-lg mb-3 font-semibold md:py-5 md:text-lg
+  }
+}
+
+/* Footer */
+@layer components {
+  .footer__container {
+    @apply bg-title pb-10
+  }
+
+  .footer__logo {
+    @apply text-white lg:grid lg:grid-cols-3 lg:py-8 lg:max-w-4xl lg:mx-auto
+  }
+
+  .footer__links {
+    @apply flex justify-center gap-x-3 mb-8
+  }
+
+  .footer__description {
+    @apply text-white text-center
+  }
+}

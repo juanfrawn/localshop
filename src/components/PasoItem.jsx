@@ -1,12 +1,12 @@
 const PasoItem = ({ img, title, description }) => {
   return (
-    <section className="grid grid-cols-steps mb-9 px-3 sm:mb-10 md:flex md:flex-col md:text-center md:w-1/3">
-      <div className="md:mx-auto md:w-28 md:mb-4">
+    <section className="pasos__item">
+      <div className="pasos__item__image">
         <img src={img} alt={title} className="md:w-full" />
       </div>
-      <div className="px-2 self-center">
-        <h3 className="text-lg sm:text-xl text-primary font-extrabold md:mb-2 lg:text-2xl">{title}</h3>
-        <p className="text-sm sm:text-base text-subtitle">{description}</p>
+      <div className="pasos__item__content">
+        <h3 className="pasos__item__title">{title}</h3>
+        <p className="pasos__item__description">{description}</p>
       </div>
     </section>
   );

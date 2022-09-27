@@ -14,8 +14,6 @@ import Tienda from "./pages/Tienda";
 import Cuenta from "./pages/Cuenta";
 import Search from "./pages/Search";
 
-import "./App.css";
-
 function App() {
   return (
     <div className="font-nunito">

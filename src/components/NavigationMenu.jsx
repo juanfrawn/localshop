@@ -22,9 +22,9 @@ const NavigationMenu = () => {
     }, [isMenuOpen]);
     
   return (
-    <div className={`h-screen bg-primary fixed top-14 transition-all duration-500 ${isMenuOpen ? 'w-full' : 'w-0'} lg:hidden z-10 `}>
+    <div className={`navbar__menu ${isMenuOpen ? 'w-full' : 'w-0'} `}>
       <section className="m-10 z-20">
-        <div className={`font-extrabold text-white flex flex-col text-lg transition-opacity duration-200 ${navbarContent ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`navbar__menu__content ${navbarContent ? 'opacity-100' : 'opacity-0'}`}>
             <Link to="/" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Home</Link>
             <Link to="/blog" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Blog</Link>
             <Link to="/faq" className="mb-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>Preguntas Frecuentes</Link>

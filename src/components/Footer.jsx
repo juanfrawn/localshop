@@ -10,8 +10,8 @@ import linkedin from '../assets/linkedIn.svg'
 
 const Footer = () => {
   return (
-    <footer className='bg-title pb-10'>
-        <section className='text-white lg:grid lg:grid-cols-3 lg:py-8 lg:max-w-4xl lg:mx-auto'>
+    <footer className='footer__container'>
+        <section className='footer__logo'>
             <div className='py-8'>
                 <img src={logo} alt="Localshop" className='mx-auto w-44 md:w-52' />
             </div>
@@ -26,13 +26,13 @@ const Footer = () => {
                 </article>
             </div>
         </section>
-        <section className='flex justify-center gap-x-3 mb-8'>
+        <section className='footer__links'>
             <img src={facebook} className="md:w-5" alt="Facebook" />
             <img src={instagram} className="md:w-9" alt="Instagram" />
             <img src={twitter} className="md:w-9" alt="Twitter" />
             <img src={linkedin} className="md:w-8" alt="Linkedin" />
         </section>
-        <section className='text-white text-center'>
+        <section className='footer__description'>
             <p className='mb-2'>Acortando la brecha digital democratizando el delivery</p>
             <a className='text-primary block mb-2'>Terminos y condiciones</a>
             <p>Pioneros en Conversational Commerce en Chile</p>
